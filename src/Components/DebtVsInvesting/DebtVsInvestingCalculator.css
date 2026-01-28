@@ -1,0 +1,245 @@
+.debt-vs-investing-calculator {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.debt-vs-investing-calculator h2 {
+  text-align: center;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 32px;
+}
+
+.calculator-layout {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 32px;
+}
+
+.input-form {
+  flex: 0 0 320px;
+  background: #f9fafb;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.input-form h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #374151;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #374151;
+  font-size: 14px;
+}
+
+.input-with-prefix,
+.input-with-suffix {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: white;
+  overflow: hidden;
+}
+
+.input-with-prefix .prefix,
+.input-with-suffix .suffix {
+  padding: 10px 12px;
+  background: #f3f4f6;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.input-with-prefix input,
+.input-with-suffix input {
+  flex: 1;
+  border: none;
+  padding: 10px 12px;
+  font-size: 16px;
+  outline: none;
+  width: 100%;
+  min-width: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.range-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.chart-container {
+  flex: 1;
+  min-width: 0;
+}
+
+.chart-container h3 {
+  text-align: center;
+  margin-top: 0;
+  color: #374151;
+}
+
+.chart-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  background: #f9fafb;
+  border-radius: 12px;
+  color: #9ca3af;
+}
+
+.custom-tooltip {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tooltip-label {
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+
+.custom-tooltip p {
+  margin: 4px 0;
+}
+
+.results-summary {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 24px;
+  border: 1px solid #e5e7eb;
+}
+
+.results-summary h3 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.results-grid {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.result-card {
+  text-align: center;
+  padding: 20px 40px;
+  border-radius: 8px;
+  background: white;
+  border: 2px solid;
+}
+
+.result-card.pay-debt {
+  border-color: #2563eb;
+}
+
+.result-card.invest {
+  border-color: #16a34a;
+}
+
+.result-card h4 {
+  margin: 0 0 8px 0;
+  color: #374151;
+}
+
+.result-card .net-worth {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.result-card.pay-debt .net-worth {
+  color: #2563eb;
+}
+
+.result-card.invest .net-worth {
+  color: #16a34a;
+}
+
+.result-card .description {
+  margin: 4px 0 0 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.winner-announcement {
+  text-align: center;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.winner-announcement.pay-debt-wins {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.winner-announcement.invest-wins {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.disclaimer {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 12px;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .calculator-layout {
+    flex-direction: column;
+  }
+
+  .input-form {
+    flex: none;
+  }
+
+  .results-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .result-card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
